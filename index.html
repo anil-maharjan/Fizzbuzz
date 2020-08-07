@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fizzbuzz</title>
+    <style>
+      body {
+        padding: 1em;
+        line-height: 1.4em;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>
+      A program that prints numbers from 1 to 100 but for multiples of 3 it
+      prints fizz and buzz for multiples of 5. And it prints fizzbuzz for
+      numbers which are multiples of both
+    </h3>
+    <script>
+      function printnumbers() {
+        for (i = 1; i <= 100; i++) {
+          if (i % 3 === 0 && i % 5 === 0) {
+            document.write("Fizzbuzz " + "<br>");
+          } else if (i % 3 === 0) {
+            document.write("Fizz " + "<br>");
+          } else if (i % 5 === 0) {
+            document.write("Buzz " + "<br>");
+          } else {
+            document.write(i + "<br>");
+          }
+        }
+      }
+
+      printnumbers();
+    </script>
+  </body>
+</html>
